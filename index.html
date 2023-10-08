@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>To Do List:</h3>
+        <ul>
+            <li>Homework</li>
+            <li>Walk Karel</li>
+            <li>Make Dinner</li>
+            <li>Clean Room</li>
+        </ul>
+        <script>
+            //write a function that crosses off
+                //should uncross item if it is already crossed off
+                //if has the attribute, remove it
+                // if doesnt have the attribute
+                    //use getAttribute
+                    //use removeAttribute
+            //write an event listener
+                //refer to lesson 1.7.4 to add events to li items
+            //use style text-decoration: line though
+            function crossOff(){
+                if(this.getAttribute("style"=="text-decoration: line=through")){
+                    this.removeAttribute("style");
+                } else {
+                    this.setAttribute("style", "text-decoration: line-through");
+            }
+            }
+            varliList = document.getElementsByTagName("li");
+            for(var i =0 ; i < liList.length; i++ ){
+                liList[i].addEventListener("click", crossOff)
+            }
+        </script>
+    </body>
+</html>
